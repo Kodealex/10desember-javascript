@@ -10,7 +10,7 @@ EKSTRA oppgaver hvis dere får tid:
 
 2. Endre countdown til 10, se i console.log
 
-3. Snu på loopen, skriv let coundown = 1, countdown < 5, og countdown++
+3. Snu på loopen, skriv let countdown = 1, countdown < 5, og countdown++
 
 KODE DERE SKAL KOPIERE:
 
@@ -24,6 +24,14 @@ while (countdown > 0) {
 console.log('Blast off!');
 
 */
+let countdown = 1;
+
+while(countdown < 5) {
+  console.log(`Countdown: ${countdown}`);
+  countdown++;
+}
+
+console.log(`Blast off!`);
 
 //OPPGAVE.2, For loop
 /*
@@ -50,6 +58,16 @@ for (let i = 1; i <= 10; i++) {
 
 */
 
+const number = 30;
+let arrayList = ["Hei", "Ho", "Og denne dagen", "Ble god"];
+
+for (let i = 0; i < arrayList.length; i++) {
+  console.log(`${number} x ${i} = ${number * i}`);
+  let newString = `dette er teksten ${arrayList[i]}`;
+
+  console.log(newString)
+}
+
 //OPPGAVE.3, forEach
 /*
 
@@ -74,6 +92,28 @@ shoppingList.forEach((item) => {
   console.log(item);
 });
 */
+let shoppingList = ["milk", "bread", "fish", "egg", 2, true];
+let newShoppingList =["Chips", "chokolate", "soda", "pie",5,false];
+const tlfList = [
+  {name: "Alexander", nr: 9000000, age: 35},
+  {name: "birger", nr: 99888990, age: 34},
+  {name: "Lisa", nr: 9008777878, age: 43}];
+
+shoppingList.forEach((item) => {
+  console.log(item);
+  let paragraph = document.createElement("p");
+  let Textbox = paragraph.textContent = shoppingList[shoppingList.item];
+  console.log(`Dette er en textbox: ${Textbox}`);
+
+  // let paragraphitem2 = paragraph.push(shoppingList[item]);
+  // let paragraphitem = paragraph.appendChild(shoppingList[item]);
+  // console.log(paragraphitem);
+  
+});
+
+tlfList.forEach((item) => {
+  console.log(item.name);
+});
 
 //OPPGAVE.4, map
 /*
